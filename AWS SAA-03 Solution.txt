@@ -292,20 +292,18 @@ Which method is the MOST cost-effective for hosting the website?
 
 B. Create an Amazon S3 bucket and host the website there.
 
-The MOST cost-effective method for hosting a website is to:
-Create an Amazon S3 bucket and host the website there.
-Amazon S3 is a highly scalable and cost-effective object storage service. It is a good option for hosting static websites, such as the website in this scenario.C is the best solution for the following reasons:
+To host a static website on Amazon S3, you would first need to create an S3 bucket. Then, you would need to upload the website files to the bucket. Once the files are uploaded, you can configure the bucket to serve as a website.
 ---------------------------------------------------------------------------------------------------------------------------------------
 33] A company runs an online marketplace web application on AWS. The application serves hundreds of thousands of users during peak hours. The company needs a scalable, near-real-time solution to share the details of millions of financial transactions with several other internal applications. Transactions also need to be processed to remove sensitive data before being stored in a document database for low-latency retrieval.
 What should a solutions architect recommend to meet these requirements?
 
 C. Stream the transactions data into Amazon Kinesis Data Streams. Use AWS Lambda integration to remove sensitive data from every transaction and then store the transactions data in Amazon DynamoDB. Other applications can consume the transactions data off the Kinesis data stream. 
 
+C is the best solution for the following reasons:
 1. Real-time Data Stream: To share millions of financial transactions with other apps, you need to be able to ingest data in real-time, which is made possible by Amazon Kinesis Data Streams.
 
 2. Data Transformation: You can cleanse and eliminate sensitive data from transactions before storing them in Amazon DynamoDB by utilizing AWS Lambda with Kinesis Data Streams. This takes care of the requirement to handle sensitive data with care.
 3. Scalability: DynamoDB and Amazon Kinesis are both extremely scalable technologies that can manage enormous data volumes and adjust to the workload.
-To host a static website on Amazon S3, you would first need to create an S3 bucket. Then, you would need to upload the website files to the bucket. Once the files are uploaded, you can configure the bucket to serve as a website.
 -------------------------------------------------------------------------------------------------------------------------
 
 34] A company hosts its multi-tier applications on AWS. For compliance, governance, auditing, and security, the company must track configuration changes on its AWS resources and record a history of API calls made to these resources.
